@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <title>
+      Calculator
+    </title>
+    <style>
+      .Calculator{
+        border-style: solid;
+        border-color: red;
+        display: inline-block;
+      }
+      .RowOne{
+        border-style: solid;
+        border-color: red;
+        margin-bottom: 5px;
+      }
+      .RowTwo{
+        border-style: solid;
+        border-color: red;
+        margin-bottom: 5px;
+      }
+      .RowThree{
+        border-style: solid;
+        border-color: red;
+        margin-bottom: 5px;
+      }
+      .RowFour{
+        border-style: solid;
+        border-color: red;
+        margin-bottom: 5px;
+      }
+    </style>  
+  </head>
+
+  <body>
+    <div class="Calculator">
+
+      <p>
+        Calculator
+      </p>  
+
+      <div class="RowOne">
+
+        <button onclick="
+          calculation +='1';
+          console.log(`${calculation}`);
+          ">
+          1
+        </button>
+
+        <button onclick="
+          calculation += '2';
+          console.log(`${calculation}`);
+        ">
+          2
+        </button>
+
+        <button onclick="
+          calculation += '3';
+          console.log(`${calculation}`);
+        ">
+          3
+        </button>
+
+        <button onclick="
+          calculation += ' + ';
+          console.log(`${calculation}`);
+        ">
+          +
+        </button> 
+
+      </div>
+
+      <div class="RowTwo">
+
+        <button onclick="
+            calculation += '4';
+            console.log(`${calculation}`);
+          ">
+          4
+        </button>
+
+        <button onclick="
+          calculation += '5';
+          console.log(`${calculation}`);
+        ">
+          5
+        </button>
+
+        <button onclick="
+          calculation += '6';
+          console.log(`${calculation}`);
+        ">
+          6
+        </button>
+
+        <button onclick="
+          calculation += ' - ';
+          console.log(`${calculation}`);
+        ">
+          -
+        </button> 
+      </div>
+
+      <div class="RowThree">
+
+        <button onclick="
+            calculation += '7';
+            console.log(`${calculation}`);
+          ">
+          7
+        </button>
+
+        <button onclick="
+          calculation += '8';
+          console.log(`${calculation}`);
+        ">
+          8
+        </button>
+
+        <button onclick="
+          calculation += '9';
+          console.log(`${calculation}`);
+        ">
+          9
+        </button>
+
+        <button onclick="
+          calculation += ' * ';
+          console.log(`${calculation}`);
+        ">
+          *
+        </button>
+
+      </div> 
+
+      <div class="RowFour">
+
+        <button onclick="
+            calculation += '0';
+            console.log(`${calculation}`);
+          ">
+          0
+        </button>
+
+        <button onclick="
+          calculation += '.';
+          console.log(`${calculation}`);
+        ">
+          .
+        </button>
+
+        <button onclick="
+          result = eval(calculation);
+          calculation = '';
+          console.log(`${result}`);
+        ">
+          =
+        </button>
+
+        <button onclick="
+          calculation += ' / ';
+          console.log(`${calculation}`);
+        ">
+          /
+        </button> 
+
+      </div>
+
+      <div>
+        <button onclick="
+            calculation = '';
+            console.log(`${calculation}`);
+          ">
+          clear
+        </button>
+      </div>
+    </div>
+
+    <script>
+      let calculation = '';
+    </script>
+
+  </body>
+  
+</html>  

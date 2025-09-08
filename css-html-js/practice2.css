@@ -1,0 +1,124 @@
+
+.search-bar {
+    display: block;
+    margin-bottom: 5px;
+} 
+.video-preview{
+    display: inline-block;
+    vertical-align: top;
+    margin-right: 10px;
+}
+.red-div{
+    display: inline-block;
+    width: 350px;
+    height: 350px;
+    background-color: red;
+    margin-right: 10px;
+}
+.green-circle{
+    display: inline-block;
+    width: 350px;
+    height: 350px;
+    background-color: green;
+    border-radius: 300px;
+    margin-right: 10px;
+}
+
+.practiceOne{
+    margin-left: 10px;
+    margin-bottom: 0;
+    border-style: solid;
+    border-color: rgb(173, 200, 190);
+    display: inline-block;
+    padding-right: 5px;
+    padding-left: 5px;
+    padding-bottom: 15px;
+    
+}
+.phraseOne{
+    margin-bottom: 10px;
+}
+.buttonOne{
+    width:30px;  
+}
+.buttonTwo{
+    width:30px;  
+}
+
+.practiceTwo{
+    display: inline-block;
+    background-color: rgb(24, 41, 41);
+    margin-left: 15px;
+    margin-top: 10px;
+}
+
+.TwoPhraseOne{
+    color: white;
+    font-size: 30px;
+    font-family: Arial, Helvetica, sans-serif;
+    padding-left: 15px;
+    margin-bottom: 0px;
+    margin-top: 15px;   
+}
+
+.TwoPhraseTwo{
+    width: 420px;
+    color: lightgray;
+    padding-left: 15px;
+}
+
+.practiceThree{
+    background-color: white;
+    margin-top: 20px;
+    border-style: none;
+    border-color: lightblue;
+    border-radius: 15px;
+    box-shadow: 5px 5px 10px 1px rgba(0, 0, 0 , 0.15);
+    display: inline-block;
+    margin-left: 20px;
+
+
+}
+
+.cat{
+    border-style: none;
+    border-radius: 50%;
+    width: 90;
+    height: 90px;
+}
+
+.join-button{
+        background-color: rgb(129, 129, 200);
+        border: none;
+        outline: none;
+        border-width: 1px;
+        border-radius: 2px;
+        height: 50px;
+        width: 100px;
+        color: white;
+        margin-left: 10px;
+        margin-right: 20px;
+        border-radius: 25px;
+        font-size: 15px;
+    
+        transition: background-color 0.15s, color 0.15s, box-shadow 0.15s;
+        vertical-align: 40px;
+    }
+
+.join-button:hover{
+        background-color: rgb(152, 199, 214);
+        color: white;
+        box-shadow: 5px 5px 10px 1px rgba(0, 0, 0 , 0.15);
+    }
+
+
+.search{
+    vertical-align: 35px;
+    font-size: 20px;
+    border: none;
+    outline: none;
+
+}    
+
+
+
