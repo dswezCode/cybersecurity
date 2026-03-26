@@ -1,4 +1,5 @@
-#this code is part of a script to perform SQL injection attacks to enumerate database
+
+#this code is part of a script to perform SQL injection attacks to enumerate database on a hacker101 ctf challange
 import sys
 import requests
 import urllib3
